@@ -102,8 +102,12 @@ window.onscroll = function() {
     document.querySelector('.nav').style.top = "0";
     document.querySelector('#hamburger').style.top = "1%";
   } else {
-    document.querySelector('.nav').style.top = "-70px";
-    document.querySelector('#hamburger').style.top = "-70px";
+    document.querySelector('.nav').style.top = "-100px";
+    if(hamburger.classList.contains('open')) {
+      document.querySelector('#hamburger').style.top = "1%";
+    }else {
+      document.querySelector('#hamburger').style.top = "-100px";
+    }
 
   }
   prevScrollpos = currentScrollPos;

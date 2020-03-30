@@ -11,6 +11,11 @@
     opacity: 0;
     @include animation( fadeIn, .5s, forwards, 1s, ease-in);
 
+    &__intro {
+        width: 60%;
+    }
+
+
 }
 
 .svg-icon {
