@@ -48,7 +48,7 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Karla', sans-serif;
   line-height: 1.5;
   scroll-behavior: smooth;
   color: #202121; }
@@ -563,7 +563,7 @@ html {
     -ms-grid-rows: min-content;
         grid-template-rows: -webkit-min-content;
         grid-template-rows: min-content;
-    grid-gap: 1.5rem;
+    grid-gap: 3.5rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
