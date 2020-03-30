@@ -1,0 +1,17 @@
+@import './abstract/variables';
+@import './abstract/mixins';
+
+@import './animations/animation';
+
+@import './base/base';
+@import './base/typography';
+
+@import './components/button.scss';
+
+@import './layout/navbar';
+@import './layout/hero';
+@import './layout/social_links';
+@import './layout/about';
+@import './layout/projects';
+@import './layout/contact';
+@import './layout/footer';

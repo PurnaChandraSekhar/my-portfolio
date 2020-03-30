@@ -1,0 +1,67 @@
+.hero {
+    grid-column: center-start/ center-end 8;
+    grid-row: 2/3;
+    padding: 10rem 2rem;
+
+    display: grid;
+    align-items: center;
+    grid-template-rows: min-content minmax(8rem, min-content) min-content minmax(8rem, min-content);
+    grid-template-columns: minmax(min-content,max-content);
+    grid-row-gap: 1rem;
+    opacity: 0;
+    @include animation( fadeIn, .5s, forwards, 1s, ease-in);
+
+}
+
+.svg-icon {
+  width: 10rem;
+  position: absolute;
+  z-index: -1;
+}
+
+.stack {
+    @include icon( 60%, 25% );
+    transform: rotate(48deg);
+}
+
+.box {
+    @include icon( 15%, 2% );
+}
+
+//media query for icons
+// <1200px
+@media only screen and (max-width: 1200px) {
+    .box {
+        @include icon(10%, 2%);
+    }
+}
+//900px
+@media only screen and (max-width: 1200px) {
+    .box {
+        @include icon(10%, 2%);
+    }
+}
+//800px
+@media only screen and (max-width: 800px) {
+    .stack {
+        @include icon(70%, 25%);
+    }
+}
+//700px
+@media only screen and (max-width: 700px) {
+    .stack {
+        @include icon(65%, 25%);
+    }
+}
+@media only screen and (max-width: 500px) {
+    .stack {
+        @include icon(75%, 20%);
+    }
+}
+//400px
+@media only screen and (max-width: 400px) {
+    .stack {
+        @include icon(75%, 10%);
+    }
+}
+

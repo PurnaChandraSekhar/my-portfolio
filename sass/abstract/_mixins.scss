@@ -1,0 +1,26 @@
+@mixin list-styles {
+    list-style: none;
+    color: $font-color;
+}
+
+@mixin link-styles {
+    text-decoration: none;
+    color: $font-color;
+}
+
+@mixin border-color($n) {
+    border: 3px solid $n;
+}
+
+@mixin animation($name, $duration, $mode, $delay, $timingFunc) {
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-fill-mode: $mode;
+    animation-delay: $delay;
+    animation-timing-function: $timingFunc;
+}
+
+@mixin icon( $top, $right ) {
+    top: $top;
+    right: $right;
+}

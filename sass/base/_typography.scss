@@ -1,0 +1,47 @@
+.heading {
+     
+    &__one {
+        font-size: 7.5rem;
+        line-height: 1;
+        color: $font-color;
+
+        &--light {
+            font-size: 4.5rem;
+            line-height: 1;
+            color: $font-color-light;
+        }
+    }
+
+    &__two{
+        font-size: 3rem;
+        line-height: 1.2;
+        color: $font-color-light;
+        font-weight: 400;
+
+        &--light {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            color: $font-color-light;
+            font-weight: 400;
+        }
+
+        &--dark-bold {
+            font-size:4rem;
+            line-height: 1.2;
+            color: $font-color;
+            font-weight: 700;
+        }
+    }
+
+    &__three{
+        font-size: 2rem;
+        line-height: 1.5;
+        color: $font-color-light;
+    }
+
+    &__four {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: $font-color-light;
+    }
+}

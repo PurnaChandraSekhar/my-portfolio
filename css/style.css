@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  color: #202121; }
+
+.container {
+  display: grid;
+  grid-template-columns: [left-col-start] minmax(10rem, 1fr) [left-col-end] repeat(8, [center-start] minmax(min-content, 14rem) [center-end right-col-start]) minmax(6rem, 1fr) [right-col-end];
+  grid-template-rows: 10vh minmax(min-content, 90vh) minmax(min-content, 75vh) min-content 60vh min-content;
+  background-color: #f8f9fa; }
+
+::selection {
+  background-color: slateblue;
+  color: #fff; }
+
+.heading__one {
+  font-size: 7.5rem;
+  line-height: 1;
+  color: #202121; }
+  .heading__one--light {
+    font-size: 4.5rem;
+    line-height: 1;
+    color: #3a3a3a; }
+
+.heading__two {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #3a3a3a;
+  font-weight: 400; }
+  .heading__two--light {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: #3a3a3a;
+    font-weight: 400; }
+  .heading__two--dark-bold {
+    font-size: 4rem;
+    line-height: 1.2;
+    color: #202121;
+    font-weight: 700; }
+
+.heading__three {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #3a3a3a; }
+
+.btn {
+  outline: none;
+  padding: 1.5rem 5rem;
+  border-radius: 5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #202121;
+  border: 3px solid slateblue; }
+  .btn-cta {
+    justify-self: start; }
+
+.nav {
+  grid-column: left-col-start / right-col-end;
+  grid-row: 1/2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  background-color: #fff;
+  box-shadow: 0px 20px 10px -25px #EBE6E6;
+  position: sticky;
+  top: 0; }
+  .nav__logo-link {
+    text-decoration: none;
+    color: #202121;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-left: 1rem; }
+  .nav__items {
+    list-style: none;
+    color: #202121;
+    display: flex;
+    font-size: 1.6rem; }
+  .nav__item {
+    padding: 0 1.5rem; }
+    .nav__item:last-child {
+      font-weight: 700; }
+  .nav__link {
+    text-decoration: none;
+    color: #202121;
+    padding-bottom: .3rem;
+    position: relative;
+    transition: width .3s ease-in; }
+    .nav__link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: .2rem;
+      background-color: #202121;
+      transition: width 0.3s cubic-bezier(0.06, 0.2, 0.98, 0.35); }
+    .nav__link:hover::after {
+      width: 100%; }
+
+.hero {
+  grid-column: center-start/ center-end 8;
+  grid-row: 2/3;
+  padding: 10rem 2rem;
+  display: grid;
+  align-items: center;
+  grid-template-rows: min-content minmax(8rem, min-content) min-content minmax(8rem, min-content);
+  grid-template-columns: minmax(min-content, max-content);
+  grid-row-gap: 1rem; }
+
+.social-links {
+  width: 5rem;
+  position: fixed;
+  bottom: 10%;
+  left: 5rem;
+  right: auto;
+  font-size: 2.5rem; }
+  .social-links__items {
+    list-style: none;
+    color: #202121; }
+  .social-links__item {
+    padding-bottom: .8rem;
+    color: #3a3a3a;
+    cursor: pointer;
+    transition: all .3s ease-in; }
+    .social-links__item:hover {
+      color: #202121;
+      transform: translateY(-0.5rem); }
+
+.about {
+  grid-column: center-start/ center-end 10;
+  grid-row: 3/4;
+  display: grid;
+  width: 65%;
+  margin: 0 auto;
+  grid-template-rows: min-content minmax(min-content, 10rem) minmax(min-content, 12rem);
+  grid-template-columns: minmax(min-content, max-content);
+  grid-row-gap: 1rem;
+  align-items: center; }
+  .about a {
+    text-decoration: none;
+    color: #202121; }
+
+.skills {
+  display: flex; }
+  .skills__section {
+    display: flex;
+    flex-direction: column; }
+    .skills__section p {
+      font-size: 1.6rem;
+      padding-bottom: .5rem; }
+  .skills__section {
+    display: flex; }
+  .skills__items {
+    list-style: none;
+    color: #202121;
+    font-size: 1.6rem;
+    color: #202121; }
+  .skills__item {
+    padding: 1rem; }
+
+.projects {
+  grid-column: center-start/ center-end 10;
+  display: grid;
+  max-width: 120rem;
+  margin: 0 auto;
+  grid-template-rows: min-content;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 35rem));
+  grid-gap: 1rem; }
+  .projects div {
+    border: 3px solid slateblue;
+    height: 15rem; }
+
+.contact {
+  grid-column: center-start/ center-end 10; }

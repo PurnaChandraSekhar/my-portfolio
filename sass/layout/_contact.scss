@@ -1,0 +1,16 @@
+.contact {
+    grid-column: 2 / 10;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+    &__text {
+        font-size: 2rem;
+        line-height: 1.5;
+        text-align: center;
+        margin: 2rem 0;
+    }
+}

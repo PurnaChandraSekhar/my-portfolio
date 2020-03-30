@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purna ChandraSekhar | Front end developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="container">
+    <header class="nav">
+        <a href="#home" class="nav__logo-link">
+            <img class="nav__logo" src="assets/header-logo.svg" alt="logo">
+        </a> 
+        <div class="nav__container">
+            <ul class="nav__items">
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">about</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link">projects</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">contact</a>
+                </li>
+                <li class="nav__item nav__resume">
+                    <a href="./assets/Updated Resume.pdf" target="_blank" class="nav__link">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+   <!-- mobile nav hamburger-menu -->
+    <div class="hamburger" id="hamburger">
+        <div class="hamburger-menu"></div>
+    </div>
+    <div class="overlay" id="overlay">        
+            <div class="overlay__menu">
+                <a href="#about" class="overlay__link">about</a>       
+                <a href="#projects" class="overlay__link">projects</a>         
+                <a href="#contact" class="overlay__link">contact</a>
+                <a href="./assets/Updated Resume.pdf" target="_blank" class="overlay__link">Resume</a>
+                <div class="overlay__icons">        
+                    <a href="https://www.linkedin.com/in/purna-chandrasekhar/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>            
+                
+                    <a href="https://github.com/PurnaChandraSekhar" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a> 
+                                            
+                    <a href="mailto:chanduchan225@gmail.com">
+                        <i class="fas fa-at"></i>
+                    </a>
+                </div>
+                <img src="assets/logo.svg" class="overlay__logo" alt="footer-logo">
+            </div>
+    </div>
+
+    <section class="hero" id="home">
+       <p class="heading__three">Hi, my name is</p>
+       <h1 class="heading__one">Purna Chandra sekhar.</h1>
+       <p class="heading__three">I'm a Front end developer from vizag, Andhra pradesh.</p>
+       <a href="mailto:chanduchan225@gmail.com" class="btn btn-cta">Let's talk</a>
+       <img src="./assets/tri-stack.svg" class="svg-icon stack" alt="icon">
+       <img src="./assets/box.svg" class="svg-icon box" alt="icon">
+    </section>
+
+    <section class="social-links">
+        <ul class="social-links__items">
+            <li class="social-links__item">
+                <a href="https://www.linkedin.com/in/purna-chandrasekhar/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+
+            <li class="social-links__item">
+                <a href="https://github.com/PurnaChandraSekhar" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+
+            <li class="social-links__item">
+                <a href="mailto:chanduchan225@gmail.com">
+                    <i class="fas fa-at"></i>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="heading__two--dark-bold about__about">About me</h2>
+        <p class="heading__three">Hi, again I'm Purna Chandrasekhar from vizag. I'm a self taught front-end developer, I have graduated from <strong><a href="https://mzu.edu.in/" title="college name">Mizoram University</a></strong> and I hold a bachelor's degree in <strong>Information Technology</strong>. I enjoy building web apps and websites using modern technologies.</strong></p>
+         <div class="skills__section">
+            <p class="heading__two--light skills__main">Skills i'm familiar with</p>
+            <div class="skills">
+                <ul class="skills__items">
+                    <li class="skills__item">
+                        <i class="fas fa-caret-right"></i>
+                        HTML & (S)CSS</li>
+                    <li class="skills__item">
+                        <i class="fas fa-caret-right"></i>
+                        JavaScript</li>
+                </ul>
+                <ul class="skills__items">
+                    <li class="skills__item">
+                        <i class="fas fa-caret-right"></i>
+                        React.js</li>
+                    <li class="skills__item">
+                        <i class="fas fa-caret-right"></i>
+                        Redux.js</li>
+                </ul>
+            </div>
+         </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading__two--dark-bold projects__main">Projects</h2>
+        <div class="projects__grid">
+            <div class="projects__project">
+                <div class="projects__project__top">
+                    <i class="far fa-folder"></i>
+                    <div class="projects__project__top--side">
+                            <a href="https://gitfetcher.netlify.com/" target="_blank" title="live demo">
+                                <i class="far fa-eye"></i>
+                            </a>
+                            <a href="https://github.com/PurnaChandraSekhar/GitHub-fetcher" target="_blank" title="github">
+                                <i class="fab fa-github"></i> 
+                            </a>                     
+                    </div>
+                </div>
+                <div class="projects__desc">
+                    <h3 class="heading__three">Github Fetcher</h3>
+                    <p class="heading__four">A react app used to fetch the github users and their profile details using github api.</p>
+                </div>
+                <div class="projects__project__bottom">
+                    <ul class="items heading__four>
+                        <li class="item">HTML</li>
+                        <li class="item">CSS</li>
+                        <li class="item">React.js</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="projects__project">
+                <div class="projects__project__top">
+                    <i class="far fa-folder"></i>
+                    <div class="projects__project__top--side">
+                            <a href="https://github.com/PurnaChandraSekhar/weather-app" target="_blank" title="github">
+                                <i class="fab fa-github"></i> 
+                            </a>                         
+                    </div>
+                </div>
+                <div class="projects__desc">
+                    <h3 class="heading__three">Weather App</h3>
+                    <p class="heading__four">this app uses external API to fetch the weather details of user defined location.</p>
+                </div>
+                <div class="projects__project__bottom">
+                    <ul class="items">
+                        <li class="item">HTML</li>
+                        <li class="item">CSS</li>
+                        <li class="item">React.js</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="projects__project">
+                <div class="projects__project__top">
+                    <i class="far fa-folder"></i>
+                    <div class="projects__project__top--side">
+                            <i class="far fa-eye"></i>
+                            <i class="fab fa-github"></i>                      
+                    </div>
+                </div>
+                <div class="projects__desc">
+                    <h3 class="heading__three">React MovieDB</h3>
+                    <p class="heading__four">Using an external API this app gives details of a movie. Redux.js is used for managing state.</p>
+                </div>
+                <div class="projects__project__bottom">
+                    <ul class="items">
+                        <li class="item">HTML&(S)CSS</li>
+                        <li class="item">React.js</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="projects__project">
+                <div class="projects__project__top">
+                    <i class="far fa-folder"></i>
+                    <div class="projects__project__top--side">
+                        <a href="https://nexttr.netlify.com/" target="_blank" title="live demo">
+                            <i class="far fa-eye"></i>
+                        </a>
+                        <a href="https://github.com/PurnaChandraSekhar/nexter-" target="_blank" title="github-ink">
+                            <i class="fab fa-github"></i>                      
+                        </a>
+                    </div>
+                </div>
+                <div class="projects__desc">
+                    <h3 class="heading__three">nexter</h3>
+                    <p class="heading__four">An css landing page which was built using flexbox and css grid.</p>
+                </div>
+                <div class="projects__project__bottom">
+                    <ul class="items">
+                        <li class="item">HTML</li>
+                        <li class="item">(S)CSS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="projects__project">
+                <div class="projects__project__top">
+                    <i class="far fa-folder"></i>
+                    <div class="projects__project__top--side">
+                        <a href="https://react-lyric-finder.netlify.com/" target="_blank" title="live demo">
+                            <i class="far fa-eye"></i>
+                        </a>
+                        <a href="https://github.com/PurnaChandraSekhar/lyric-finder" target="_blank" title="github-ink">
+                            <i class="fab fa-github"></i>                      
+                        </a>                     
+                    </div>
+                </div>
+                <div class="projects__desc">
+                    <h3 class="heading__three">Lyric finder</h3>
+                    <p class="heading__four">This app uses an API to fetch the lyrics of any song.</p>
+                </div>
+                <div class="projects__project__bottom">
+                    <ul class="items">
+                        <li class="item">HTML</li>
+                        <li class="item">CSS</li>
+                        <li class="item">React.js</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="projects__project">
+                <div class="projects__project__top">
+                    <i class="far fa-folder"></i>
+                    <div class="projects__project__top--side">
+                            <i class="far fa-eye"></i>
+                            <i class="fab fa-github"></i>                      
+                    </div>
+                </div>
+                <div class="projects__desc">
+                    <h3 class="heading__three">Youtube Clone</h3>
+                    <p class="heading__four">A react based application, which uses Youtube's API to fetch videos and display them.
+                    </p>
+                </div>
+                <div class="projects__project__bottom">
+                    <ul class="items">
+                        <li class="item">HTML</li>
+                        <li class="item">CSS</li>
+                        <li class="item">React.js</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading__two--dark-bold">Get in touch</h2>
+        <p class="contact__text">So, I'm currently looking for job in startups. If u like my work and would like to talk more or say hi? my inbox is always open and I'll try my best to answer your mail.</p>
+        <a href="mailto:chanduchan225@gmail.com" class="btn btn-cmb">Say Hi</a>
+    </section>
+
+    <footer class="footer">
+        <img src="assets/logo.svg" class="footer__img" alt="footer-logo">
+         <div class="footer__icons">
+            <ul class="footer__items">
+                <li class="footer__item">
+                    <a href="https://www.linkedin.com/in/purna-chandrasekhar/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+    
+                <li class="footer__item">
+                    <a href="https://github.com/PurnaChandraSekhar" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+    
+                <li class="footer__item">
+                    <a href="mailto:chanduchan225@gmail.com">
+                        <i class="fas fa-at"></i>
+                    </a>
+                </li>
+            </ul>
+         </div>
+        <p class="footer__main">Built with <i class="fas fa-heart footer__heart"></i> by Purna Chandra sekhar. &copy; 2020.</p>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

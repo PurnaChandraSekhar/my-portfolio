@@ -1,0 +1,50 @@
+// WEBISTE RESETTING
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  //10px/16px = 62.5%
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    color: $font-color;
+}
+
+@media only screen and (max-width: 700px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    html {
+        font-size: 75.5%;
+    }
+}
+
+
+
+//container class for grid layout
+.container {
+    display: grid;
+    grid-template-columns: [left-col-start]minmax(10rem, 1fr)[left-col-end] repeat(8,[center-start] minmax(min-content, 14rem) [center-end right-col-start]) minmax(6rem, 1fr)[right-col-end];
+    grid-template-rows: 10vh minmax(min-content,90vh) minmax(min-content, 75vh) min-content minmax(min-content, 100vh) min-content;
+    background-color: $white-color;
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        grid-template-columns: [left-col-start]minmax(5rem, 1fr)[left-col-end] repeat(8,[center-start] minmax(min-content, 14rem) [center-end right-col-start]) minmax(5rem, 1fr)[right-col-end];
+    }
+}
+
+::selection {
+    background-color: slateblue;
+    color: #fff;
+}

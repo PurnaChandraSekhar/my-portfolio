@@ -1,0 +1,215 @@
+.nav {
+    grid-column: left-col-start / right-col-end ;
+    grid-row: 1/2;
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    background-color: $white-color;
+    z-index: 1;
+    box-shadow: 0px 5px 15px -15px rgba(0,0,0,0.5);
+
+    position: sticky;
+    top: 0;
+    transition: top .3s;
+
+    &__logo {
+        width: 20rem;
+        opacity: 0;
+        @include animation( fadeIn, .5s, forwards, 0, ease-in);
+    }
+
+    &__logo-link{ 
+        @include link-styles;
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding-left: 1rem;
+    }
+
+    &__items {
+        @include list-styles;
+        display: flex;
+        font-size: 1.6rem;
+    }
+
+    &__item {
+        padding: 0 1.5rem;
+        opacity: 0;
+        @include animation( fadeIn, .5s, forwards, .5s, ease-in);
+
+        &:last-child {
+            font-weight: 700;
+            padding: 0 1rem;
+        }
+    }
+
+    &__link{
+        @include link-styles;
+        padding-bottom: .3rem;
+        position: relative;
+        transition: width .3s ease-in;
+
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: .2rem;
+            background-color: $font-color;
+            transition: width .3s cubic-bezier(.06,.2,.98,.35);
+        }
+ 
+      &:hover::after {
+           width: 100%;
+      }   
+    }
+}
+
+
+// MOBILE NAV
+.hamburger {
+    position: fixed;
+    cursor: pointer;
+    height: 5rem;
+    width: 5rem;
+    top: 1%;
+    right: 3%;
+    z-index: 2000;
+    opacity: 0;
+    transition: top .3s ease-in;
+    @include animation( fadeIn, .5s, forwards, .5s, ease-in);
+}
+.hamburger-menu {
+    position: relative;
+    background-color: $font-color;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 3px;
+    width: 2rem;
+    cursor: pointer;
+    display: none;
+    transition: all .2s ease-in-out;
+
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: $font-color;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+    }
+
+    &::before {
+        transform: translateY(-.7rem);
+        left: -1rem;
+    }
+
+    &::after {
+        transform: translateY(.7rem);
+        left: 1rem;
+    }
+}
+
+.overlay {
+    height: 100%;
+    width: 0%;
+    background-color: slateblue;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    overflow-x: hidden;
+    transition: width .3s ease-out;
+
+    &__menu {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    &__link {
+        @include link-styles;
+        font-size: 2rem;
+        color: $grey-color-light;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: .3s ease-in;
+
+        &:hover {
+            color: $font-color-light;
+        }
+    }
+
+    &__logo {
+        width: 30rem;
+    }
+
+    &__icons {
+        display: flex;
+        align-items: center;
+        font-size: 2.5rem;
+
+        a {
+            @include link-styles;
+            padding: 0 2rem;
+            color: $font-color;
+            transition: color .3s ease-in-out;
+
+            &:hover {
+                color: $font-color-light;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav__container {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+
+    .overlay.open {
+        width: 100%;
+    }
+
+    .hamburger.open .hamburger-menu {
+        background: rgba(0,0,0,0);
+    }
+
+    .hamburger.open .hamburger-menu::before {
+        transform: rotate(135deg);
+        left: 1rem;
+    }
+
+    .hamburger.open .hamburger-menu::after {
+        transform: rotate(45deg);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .nav { padding: 0 2rem; }
+
+    .hamburger {
+        right: 4%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .hamburger {
+        right: 4%;
+    }
+}

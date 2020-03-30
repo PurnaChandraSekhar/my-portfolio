@@ -1,0 +1,16 @@
+.btn {
+    outline: none;
+    padding: 1.5rem 5rem;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    @include link-styles;
+    @include border-color(slateblue);
+
+    &-cta {
+        justify-self: start;
+    }
+
+    &-cmb {
+        font-size: 1.6rem;
+    }
+}
