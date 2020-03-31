@@ -3,7 +3,8 @@
     grid-row: 3/4;
 
     display: grid;
-    grid-template-rows: min-content minmax(min-content, 10rem) minmax(min-content, 12rem);
+    // grid-template-rows: min-content minmax(min-content, 10rem) minmax(min-content, 12rem);
+    grid-template-rows: min-content minmax(min-content, 4rem) minmax(min-content, 5rem) minmax(min-content, 25rem);
     grid-template-columns: minmax(min-content, max-content);
     grid-row-gap: 1rem;
     align-items: center;

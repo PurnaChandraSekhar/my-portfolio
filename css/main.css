@@ -490,9 +490,9 @@ html {
   grid-row: 3/4;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: min-content minmax(min-content, 10rem) minmax(min-content, 12rem);
-      grid-template-rows: -webkit-min-content minmax(-webkit-min-content, 10rem) minmax(-webkit-min-content, 12rem);
-      grid-template-rows: min-content minmax(min-content, 10rem) minmax(min-content, 12rem);
+  -ms-grid-rows: min-content minmax(min-content, 4rem) minmax(min-content, 5rem) minmax(min-content, 25rem);
+      grid-template-rows: -webkit-min-content minmax(-webkit-min-content, 4rem) minmax(-webkit-min-content, 5rem) minmax(-webkit-min-content, 25rem);
+      grid-template-rows: min-content minmax(min-content, 4rem) minmax(min-content, 5rem) minmax(min-content, 25rem);
   -ms-grid-columns: minmax(min-content, max-content);
       grid-template-columns: minmax(-webkit-min-content, -webkit-max-content);
       grid-template-columns: minmax(min-content, max-content);
