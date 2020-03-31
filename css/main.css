@@ -74,9 +74,9 @@ html {
 
 @media only screen and (max-width: 700px) {
   .container {
-    -ms-grid-columns: [left-col-start] minmax(2rem, 1fr) [left-col-end] ([center-start] minmax(min-content, 14rem) [center-end right-col-start])[8] minmax(2rem, 1fr) [right-col-end];
-        grid-template-columns: [left-col-start] minmax(2rem, 1fr) [left-col-end] repeat(8, [center-start] minmax(-webkit-min-content, 14rem) [center-end right-col-start]) minmax(2rem, 1fr) [right-col-end];
-        grid-template-columns: [left-col-start] minmax(2rem, 1fr) [left-col-end] repeat(8, [center-start] minmax(min-content, 14rem) [center-end right-col-start]) minmax(2rem, 1fr) [right-col-end]; } }
+    -ms-grid-columns: [left-col-start] minmax(1rem, 1fr) [left-col-end] ([center-start] minmax(min-content, 14rem) [center-end right-col-start])[8] minmax(1rem, 1fr) [right-col-end];
+        grid-template-columns: [left-col-start] minmax(1rem, 1fr) [left-col-end] repeat(8, [center-start] minmax(-webkit-min-content, 14rem) [center-end right-col-start]) minmax(1rem, 1fr) [right-col-end];
+        grid-template-columns: [left-col-start] minmax(1rem, 1fr) [left-col-end] repeat(8, [center-start] minmax(min-content, 14rem) [center-end right-col-start]) minmax(1rem, 1fr) [right-col-end]; } }
 
 ::-moz-selection {
   background-color: slateblue;
@@ -490,9 +490,9 @@ html {
   grid-row: 3/4;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: min-content minmax(min-content, 4rem) minmax(min-content, 5rem) minmax(min-content, 25rem);
-      grid-template-rows: -webkit-min-content minmax(-webkit-min-content, 4rem) minmax(-webkit-min-content, 5rem) minmax(-webkit-min-content, 25rem);
-      grid-template-rows: min-content minmax(min-content, 4rem) minmax(min-content, 5rem) minmax(min-content, 25rem);
+  -ms-grid-rows: min-content minmax(min-content, 4rem) minmax(min-content, 5rem) minmax(min-content, 20rem);
+      grid-template-rows: -webkit-min-content minmax(-webkit-min-content, 4rem) minmax(-webkit-min-content, 5rem) minmax(-webkit-min-content, 20rem);
+      grid-template-rows: min-content minmax(min-content, 4rem) minmax(min-content, 5rem) minmax(min-content, 20rem);
   -ms-grid-columns: minmax(min-content, max-content);
       grid-template-columns: minmax(-webkit-min-content, -webkit-max-content);
       grid-template-columns: minmax(min-content, max-content);
