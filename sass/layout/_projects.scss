@@ -22,10 +22,9 @@
         height: 30rem;
         border-radius: .5rem;
         transition: transform .3s ease;
-        box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0,0,0,0.16);
+        box-shadow: 0 0 1rem -.6rem rgba(0, 0, 0, 0.5);
         opacity: 0;
-
-
+        
         &:hover {
             transform: translateY(-.3rem);
         }

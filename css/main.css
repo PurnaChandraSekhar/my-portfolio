@@ -542,7 +542,8 @@ html {
 
 @media only screen and (max-width: 700px) {
   .about {
-    padding: 1rem; } }
+    padding: 1rem;
+    text-align: left; } }
 
 .projects {
   -ms-grid-column: 2;
@@ -589,8 +590,8 @@ html {
     transition: -webkit-transform .3s ease;
     transition: transform .3s ease;
     transition: transform .3s ease, -webkit-transform .3s ease;
-    -webkit-box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0, 0, 0, 0.16);
-            box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0 0 1rem -0.6rem rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 1rem -0.6rem rgba(0, 0, 0, 0.5);
     opacity: 0; }
     .projects__project:hover {
       -webkit-transform: translateY(-0.3rem);
