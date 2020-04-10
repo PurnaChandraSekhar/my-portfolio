@@ -89,7 +89,8 @@ html {
 .heading__one {
   font-size: 7.5rem;
   line-height: 1;
-  color: #202121; }
+  color: #202121;
+  font-weight: 700; }
   .heading__one--light {
     font-size: 4.5rem;
     line-height: 1;
