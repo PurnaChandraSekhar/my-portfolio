@@ -374,9 +374,9 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-rows: min-content minmax(8rem, min-content) min-content minmax(8rem, min-content);
-      grid-template-rows: -webkit-min-content minmax(8rem, -webkit-min-content) -webkit-min-content minmax(8rem, -webkit-min-content);
-      grid-template-rows: min-content minmax(8rem, min-content) min-content minmax(8rem, min-content);
+  -ms-grid-rows: min-content minmax(8rem, min-content) min-content minmax(9rem, min-content);
+      grid-template-rows: -webkit-min-content minmax(8rem, -webkit-min-content) -webkit-min-content minmax(9rem, -webkit-min-content);
+      grid-template-rows: min-content minmax(8rem, min-content) min-content minmax(9rem, min-content);
   -ms-grid-columns: minmax(min-content, max-content);
       grid-template-columns: minmax(-webkit-min-content, -webkit-max-content);
       grid-template-columns: minmax(min-content, max-content);
