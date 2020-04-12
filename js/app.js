@@ -74,7 +74,7 @@ const projectObserver = new IntersectionObserver( ( entries, projectObserver ) =
 projectObserver.observe(projectSection);
 
 //individual project
-const project = document.querySelectorAll('.projects__project');
+const project = document.querySelectorAll('.project');
 
 const proOptions = {
   threshold: .25,

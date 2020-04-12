@@ -4,72 +4,128 @@
     flex-direction: column;
     opacity: 0;
 
-    &__grid {
-        display: grid;
-
-        grid-template-columns: repeat(auto-fit, minmax(min-content, 28rem ));
-        grid-template-rows: min-content;
-        grid-gap: 3.5rem;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__project {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 1rem;
-        height: 30rem;
-        border-radius: .5rem;
-        transition: transform .3s ease;
-        box-shadow: 0 0 1rem -.6rem rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        
-        &:hover {
-            transform: translateY(-.3rem);
-        }
-
-        &__top {
-            display: flex;
-            justify-content: space-between;
-            padding: .5rem;
-
-            i {
-                font-size: 6rem;
-            }
-
-            &--side {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                width: 45%;
-               
-                a {
-                    color: $font-color;
-                }
-                i {
-                    font-size: 2rem;
-                }
-            }
-        }
-
-        &__bottom {
-            
-            .items {
-                display: flex;
-                justify-content: space-evenly;
-                @include list-styles;
-                font-size: 1.6rem;
-            }
-        }
-    }
-
-    &__desc {
-       text-align: center;
-    }
-
     &__main {
         align-self: center;
         margin-bottom: 3rem;
     }
+
+    //project styles
+   .project {
+       min-height: 50vh;
+       max-width: 90rem;
+       padding: 1.5rem 0;
+       margin: 0 auto 5rem auto;
+
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       box-shadow: 0 0 1rem -.6rem rgba(0, 0, 0, 0.5);
+       opacity: 0;
+       transition: opacity .3s ease-in;
+
+       &__img{
+           min-width: 35rem;
+           max-width: 35rem;
+           height: 30rem;
+           transform: translateX(-4rem);
+
+           &--img {
+               height: 100%;
+               width: 100%;
+               object-fit: cover;
+               box-shadow: 0 0 1rem -.6rem rgba(0, 0, 0, 0.5);
+           }
+       }
+       &__information{
+           padding: 0 3rem 0 2rem;
+
+           h3 {
+               margin-bottom: 2rem;
+           }
+       }
+       &__items{
+           list-style: none;
+           font-size: 1.6rem;
+
+           display: flex;
+           margin-top: 2rem;
+       }
+       &__item:not(:last-child){
+          padding-right: 2rem;
+       }
+       &__icons {
+           display: flex;
+           font-size: 2.5rem;
+           margin-top: 2rem;
+           justify-content: flex-end;
+        }
+        &__link {
+                text-decoration: none;
+                color: $font-color-light;
+                transition: color .3s ease-in;
+        }
+
+        &__link:hover {
+            color: $font-color;
+        }
+
+        &__link:not(:last-child) {
+            padding-right: 2rem;
+        }
+
+        &__icon:not(:last-child) {
+         padding-right: 2rem; 
+       }
+   }
+
+   @media only screen and (max-width: 1200px) {
+       .project {
+           max-width: 80rem;
+
+           &__img {
+               transform: translateX(-2rem);
+           }
+       }
+   }
+
+   @media only screen and (max-width: 1000px) {
+    .project {
+        max-width: 70rem;
+    }
+ }
+
+ @media only screen and (max-width: 800px) {
+       .project {
+
+           &__img {
+               transform: translateX(-4rem);
+               &--img{
+               height: 28rem;
+               }
+           }
+       }
+ }
+
+ @media only screen and (max-width: 700px) {
+     .projects__main { margin-bottom: 5rem; }
+
+    .project {
+        flex-direction: column;
+        &__img {
+            transform: translateY(-4rem);
+            min-width: 80%;
+            max-width: 80%;
+        }
+
+        &__icons {
+            justify-content: flex-end;
+        }
+
+        &__icon {
+            color: $font-color;
+        }
+    }
+}
+
+    
 }
