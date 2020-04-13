@@ -44,6 +44,12 @@ html {
     }
 }
 
+@media only screen and (max-width: 400px) {
+    .container {
+        grid-template-rows: 10vh minmax(min-content,90vh) minmax(min-content, 75vh) min-content minmax(min-content, 85vh) min-content;
+    }
+}
+
 ::selection {
     background-color: slateblue;
     color: #fff;

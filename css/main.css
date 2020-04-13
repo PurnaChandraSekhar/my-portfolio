@@ -78,6 +78,12 @@ html {
         grid-template-columns: [left-col-start] minmax(1rem, 1fr) [left-col-end] repeat(8, [center-start] minmax(-webkit-min-content, 14rem) [center-end right-col-start]) minmax(1rem, 1fr) [right-col-end];
         grid-template-columns: [left-col-start] minmax(1rem, 1fr) [left-col-end] repeat(8, [center-start] minmax(min-content, 14rem) [center-end right-col-start]) minmax(1rem, 1fr) [right-col-end]; } }
 
+@media only screen and (max-width: 400px) {
+  .container {
+    -ms-grid-rows: 10vh minmax(min-content, 90vh) minmax(min-content, 75vh) min-content minmax(min-content, 85vh) min-content;
+        grid-template-rows: 10vh minmax(-webkit-min-content, 90vh) minmax(-webkit-min-content, 75vh) -webkit-min-content minmax(-webkit-min-content, 85vh) -webkit-min-content;
+        grid-template-rows: 10vh minmax(min-content, 90vh) minmax(min-content, 75vh) min-content minmax(min-content, 85vh) min-content; } }
+
 ::-moz-selection {
   background-color: slateblue;
   color: #fff; }
