@@ -20,6 +20,16 @@
     }
 }
 
+.about-stack {
+    @include icon( 60%, 72% );
+    transform: rotate(48deg);
+}
+
+.about-box {
+    @include icon( 1%, 5% );
+    transform: rotate(15deg);
+}
+
 .skills {
     display: flex;
 
@@ -47,12 +57,20 @@
     &__item {
         padding: 1rem;
     }
-
 }
 
 @media only screen and (max-width: 700px) {
     .about {
         padding: 1rem;
         text-align: left;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .about-stack{
+        @include icon( 75%, 75% );
+    }
+    .about-box{
+       display: none;
     }
 }
