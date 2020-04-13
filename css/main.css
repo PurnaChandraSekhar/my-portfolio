@@ -617,6 +617,8 @@ html {
         border-radius: 1rem;
         -o-object-fit: cover;
            object-fit: cover;
+        -o-object-position: top left;
+           object-position: top left;
         -webkit-box-shadow: 0 0 1rem -0.6rem rgba(0, 0, 0, 0.5);
                 box-shadow: 0 0 1rem -0.6rem rgba(0, 0, 0, 0.5); }
     .projects .project__information {
