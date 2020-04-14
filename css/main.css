@@ -64,16 +64,18 @@ html {
   color: #202121;
 }
 
-@media only screen and (max-width: 700px) {
-  html {
-    font-size: 55%;
-  }
+::-moz-selection {
+  background-color: slateblue;
+  color: #fff;
 }
 
-@media only screen and (min-width: 1800px) {
-  html {
-    font-size: 75.5%;
-  }
+::selection {
+  background-color: slateblue;
+  color: #fff;
+}
+
+.position-fixed {
+  position: fixed;
 }
 
 .container {
@@ -89,6 +91,9 @@ html {
 }
 
 @media only screen and (max-width: 700px) {
+  html {
+    font-size: 55%;
+  }
   .container {
     -ms-grid-columns: [left-col-start] minmax(1rem, 1fr) [left-col-end] ([center-start] minmax(min-content, 14rem) [center-end right-col-start])[8] minmax(1rem, 1fr) [right-col-end];
         grid-template-columns: [left-col-start] minmax(1rem, 1fr) [left-col-end] repeat(8, [center-start] minmax(-webkit-min-content, 14rem) [center-end right-col-start]) minmax(1rem, 1fr) [right-col-end];
@@ -104,14 +109,10 @@ html {
   }
 }
 
-::-moz-selection {
-  background-color: slateblue;
-  color: #fff;
-}
-
-::selection {
-  background-color: slateblue;
-  color: #fff;
+@media only screen and (min-width: 1800px) {
+  html {
+    font-size: 75.5%;
+  }
 }
 
 .heading__one {
@@ -554,8 +555,14 @@ html {
 
 @media only screen and (max-width: 400px) {
   .stack {
-    top: 70%;
-    right: 20%;
+    top: 65%;
+    right: 35%;
+  }
+  .contact-stack {
+    top: 75%;
+    right: 15%;
+    -webkit-transform: rotate(48deg);
+            transform: rotate(48deg);
   }
 }
 

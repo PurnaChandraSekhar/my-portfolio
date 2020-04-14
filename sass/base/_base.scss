@@ -16,18 +16,14 @@ html {
     color: $font-color;
 }
 
-@media only screen and (max-width: 700px) {
-    html {
-        font-size: 55%;
-    }
+::selection {
+    background-color: slateblue;
+    color: #fff;
 }
 
-@media only screen and (min-width: 1800px) {
-    html {
-        font-size: 75.5%;
-    }
+.position-fixed {
+    position: fixed;
 }
-
 
 
 //container class for grid layout
@@ -38,7 +34,11 @@ html {
     background-color: $white-color;
 }
 
+
 @media only screen and (max-width: 700px) {
+    html {
+        font-size: 55%;
+    }
     .container {
         grid-template-columns: [left-col-start]minmax(1rem, 1fr)[left-col-end] repeat(8,[center-start] minmax(min-content, 14rem) [center-end right-col-start]) minmax(1rem, 1fr)[right-col-end];
     }
@@ -50,7 +50,8 @@ html {
     }
 }
 
-::selection {
-    background-color: slateblue;
-    color: #fff;
+@media only screen and (min-width: 1800px) {
+    html {
+        font-size: 75.5%;
+    }
 }
