@@ -547,6 +547,9 @@ html {
 }
 
 @media only screen and (max-width: 400px) {
+  .hero__intro {
+    width: 55%;
+  }
   .stack {
     top: 70%;
     right: 20%;
