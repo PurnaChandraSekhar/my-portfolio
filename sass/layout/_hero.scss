@@ -59,17 +59,18 @@
     }
 }
 @media only screen and (max-width: 500px) {
+    .hero {
+        padding: 5rem 2rem 10rem 1rem;
+        &__intro {
+            width: 55%;
+        }
+    }
     .stack {
         @include icon(75%, 20%);
     }
 }
 //400px
 @media only screen and (max-width: 400px) {
-    .hero {
-        &__intro {
-            width: 55%;
-        }
-    }
     .stack {
         @include icon(70%, 20%);
     }

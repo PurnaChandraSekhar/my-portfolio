@@ -540,6 +540,12 @@ html {
 }
 
 @media only screen and (max-width: 500px) {
+  .hero {
+    padding: 5rem 2rem 10rem 1rem;
+  }
+  .hero__intro {
+    width: 55%;
+  }
   .stack {
     top: 75%;
     right: 20%;
@@ -547,9 +553,6 @@ html {
 }
 
 @media only screen and (max-width: 400px) {
-  .hero__intro {
-    width: 55%;
-  }
   .stack {
     top: 70%;
     right: 20%;
