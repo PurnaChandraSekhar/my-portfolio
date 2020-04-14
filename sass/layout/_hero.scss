@@ -74,9 +74,5 @@
     .stack {
         @include icon(65%, 35%);
     }
-    .contact-stack {
-        @include icon(75%, 15%);
-        transform: rotate(48deg);
-    }
 }
 
